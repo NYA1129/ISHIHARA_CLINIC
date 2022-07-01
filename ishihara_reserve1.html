@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>お問い合わせ</title>
+    <link href="ishihara_reserve_form.css" rel="stylesheet" type="text/css">
+    <link href="ishihara_reserve_form.css" rel="stylesheet">
+    <link href="destyle.css" rel="stylesheet" type="text/css">
+    <link href="destyle.css" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="wrapper">
+    <header class="all-header">
+       <div class="top">
+           <img src="Top4.jpg" alt="" width="100%" height="180">
+           <p>いしはら整骨院</p>
+        </div> 
+    <nav id="header-menu">
+    <ul class="header-contents">
+            <li class="first-menu"><a href="ishihara.html">Home</a></li>
+        <li class="first-menu">
+             <a>初めての方へ<span>▼</span></a>
+             <ul class="sub-contents">
+             <li class="sub-content"><a href="#">院紹介</a></li>
+             <li class="sub-content"><a href="#">施術の流れ</a></li>
+             </ul>
+        </li>
+        <li class="first-menu">
+        <a>Info<span>▼</span></a>
+                <ul class="sub-contents">
+                <li class="sub-content"><a href="ishihara_reserve1.html">お問い合わせ</a></li>
+                <li class="sub-content"><a href="#">よくある質問</a></li>
+                </ul> 
+        </li>
+        <li class="first-menu">
+        <a >院案内<span>▼</span></a>
+            <ul class="sub-contents">
+            <li class="sub-content"><a href="#">アクセス・受付時間</a></li>
+            <li class="sub-content"><a href="#">院長・スタッフ紹介</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+
+  </header>
+  <script src="ishihara-header.js"></script>
+
+<main>
+
+<section class="banner-page">
+    <div class="banner-title">
+        <h1 class="banner-title">Info</h1>
+        <h2 class="banner-title">お問い合わせ</h2>
+     </div> 
+</section> 
+    <div class="text-box1">
+        <p>ご質問・ご意見など気軽にお問い合わせください</p>
+        <h1>☎ 0944-87-9500</h1>
+    </div>
+    <div class="banner2">
+        <span>✉お問い合わせフォーム</span>
+    </div>
+ 
+<!--ここからフォーム-->
+    <form action="confirm.php" method="POST" 
+    onsubmit="return verifyContactForm()">
+    <div id="form">
+        <table class="form-table">
+            <tr>
+            <th><span class="must must-name">必須</span>名前</th>
+                <td>
+                <span class="error-message"></span>
+                <input name="form_name" type="text" size="40" class="input-name input-form" aria-required="true" placeholder="例）石原　太郎" value=""> 
+            </td>
+            </tr>
+            <tr>
+            <th><span class="must must-mail">必須</span>メールアドレス</th>
+            <td>
+                <span class="error-message"></span>
+                <input name="form_mail" type="text" size="40" class="input-mail input-form" aria-required="true" placeholder="例）ishihara@example.com" value="">
+                
+            </td>
+            </tr>
+            <tr>
+            <th><span class="must must-naiyou">必須</span>お問い合わせ内容</th>
+            <td>
+                <span class="error-message"></span>
+                <textarea name="form_naiyou" name="naiyou" cols="50" rows="10" class="input-form" aria-required="true" placeholder="お問い合わせ内容"></textarea>
+                
+            </td>
+            </tr>
+        </table>
+        <div class="form-button">
+            
+            <span class="">
+            <input type="submit" value="送信する" name="submitted">
+            </span>
+        </div>
+    </div>
+</form>
+</main>
+
+
+<footer>
+    <section id="footer">
+        <div class="inner">
+        <div class="footer-box">
+            <div class="footer-info footer-item">
+                <p class="footer-name">いしはら整骨院</p>
+                <p class="footer-info2">☎ 0944-87-9500</p>
+                <p class="footer-info2">〒831-0041
+                    <br>福岡県大川市小保467-1</p>
+            </div>
+            <div class="footer-timesche footer-item">
+                <p class="footer-timesche1">受付時間</p>
+                <p class="footer-timesche2">月火木金</p>
+                <p class="footer-timesche3">8:30〜14:30<br>16:30〜18:30</p>
+                <p class="footer-timesche2">土日祝</p>
+                <p class="footer-timesche3">8:30〜14:30<br>日曜は予約制</p>
+                <p class="footer-timesche1">定休日</p>
+                <p class="footer-timesche2">水曜日</p>
+            </div>
+            <div class="reserve-footer footer-item">
+                <button onclick="window.open('ishihara_reserve1.html')">✉ネットでのお問い合わせはコチラ</button>
+            </div>
+        </div>
+    </section>
+</footer>
+</div>
+</body>
+</html>
